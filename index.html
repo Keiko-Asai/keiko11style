@@ -299,6 +299,65 @@
     gap:8px;
   }
 
+  /* ===== Contact form ===== */
+  .contact-form{
+    background:var(--white);
+    border-radius:24px;
+    padding:40px 32px;
+    max-width:480px;
+    margin:40px auto 0;
+    text-align:left;
+    box-shadow:var(--shadow);
+  }
+  .form-group{margin-bottom:22px;}
+  .form-group:last-of-type{margin-bottom:0;}
+  .form-group label{
+    display:block;
+    font-weight:700;
+    font-size:0.9rem;
+    color:var(--peach-deep);
+    margin-bottom:8px;
+  }
+  .form-group label .required{
+    color:#e0685f;
+    margin-left:4px;
+    font-weight:700;
+  }
+  .form-group input,
+  .form-group textarea{
+    width:100%;
+    font-family:inherit;
+    font-size:0.95rem;
+    color:var(--text);
+    background:var(--cream);
+    border:1px solid rgba(20,128,111,0.15);
+    border-radius:12px;
+    padding:14px 16px;
+    resize:vertical;
+  }
+  .form-group input:focus,
+  .form-group textarea:focus{
+    outline:2px solid var(--green-deep);
+    outline-offset:1px;
+  }
+  .form-submit{
+    display:block;
+    width:100%;
+    border:none;
+    cursor:pointer;
+    background:var(--peach-deep);
+    color:#fff;
+    font-family:inherit;
+    font-weight:700;
+    font-size:1.05rem;
+    padding:16px;
+    border-radius:999px;
+    margin-top:28px;
+    box-shadow:var(--shadow);
+    transition:transform .2s ease;
+  }
+  .form-submit:hover{transform:translateY(-2px);}
+
   /* ===== Footer ===== */
   footer{
     text-align:center;
@@ -397,12 +456,29 @@
     <div class="contact">
       <h2>まずは、気軽にお話ししてみませんか？</h2>
       <p>無料相談は完全予約制です。ご都合の良い日時をお選びください。しつこい勧誘は一切ありませんので、安心してご利用ください。</p>
-      <a href="mailto:info@example.com?subject=無料相談の予約希望" class="btn-primary">無料相談を予約する</a>
-      <div class="contact-methods">
-        <a href="mailto:info@example.com" class="contact-method">✉️ メールで相談</a>
-        <a href="tel:0000000000" class="contact-method">📞 電話で相談</a>
-        <a href="#" class="contact-method">💬 LINEで相談</a>
-      </div>
+      <form class="contact-form" action="https://formsubmit.co/keikoxmind@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="無料相談フォームからのお問い合わせ">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+        <div class="form-group">
+          <label for="name">お名前<span class="required">必須</span></label>
+          <input type="text" id="name" name="お名前" required>
+        </div>
+        <div class="form-group">
+          <label for="email">メールアドレス<span class="required">必須</span></label>
+          <input type="email" id="email" name="メールアドレス" required>
+        </div>
+        <div class="form-group">
+          <label for="tel">電話番号</label>
+          <input type="tel" id="tel" name="電話番号">
+        </div>
+        <div class="form-group">
+          <label for="message">ご相談内容</label>
+          <textarea id="message" name="ご相談内容" rows="5"></textarea>
+        </div>
+        <button type="submit" class="form-submit">この内容で送信する</button>
+      </form>
     </div>
   </div>
 </section>
