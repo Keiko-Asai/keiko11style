@@ -241,8 +241,10 @@
 
   .feature-grid{
     display:grid;
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:repeat(2,1fr);
     gap:20px;
+    max-width:600px;
+    margin:0 auto;
   }
   .feature-card{
     text-align:center;
@@ -395,13 +397,13 @@
   <div class="blob blob3"></div>
   <div class="container">
     <span class="eyebrow">初めての方も、まずはお気軽に</span>
-    <h1>ひとりで悩まず、<br><span>まずは話してみませんか？</span></h1>
-    <p class="lead">あなたの中にある『モヤモヤ』に、そっと寄り添うところから始めます。無料相談は、答えを押しつける場ではありません。</p>
+    <h1>「私はどうしたい？」がわからなくなったあなたへ<br><span>小さな遠慮に気づく30分です。</span></h1>
+    <p class="lead">周りを優先することが当たり前になって、自分の気持ちがわからなくなっていませんか？</p>
+    <p class="lead">無料相談では、答えを押しつけるのではなく、今のモヤモヤを一緒に言葉にしていきます。</p>
     <a href="#contact" class="btn-primary">無料相談を予約する</a>
     <span class="btn-sub">所要時間 約30分・オンライン対応</span>
     <div class="hero-badges">
       <div class="hero-badge"><span class="dot"></span>相談実績多数</div>
-      <div class="hero-badge"><span class="dot"></span>強引な勧誘は一切なし</div>
       <div class="hero-badge"><span class="dot"></span>秘密は厳守します</div>
     </div>
   </div>
@@ -414,10 +416,11 @@
       <p>一つでも当てはまったら、どうぞこのまま読み進めてみてください。</p>
     </div>
     <div class="empathy-grid">
-      <div class="empathy-card"><span class="icon">😔</span><p>何から始めればいいのか、わからない</p></div>
-      <div class="empathy-card"><span class="icon">🌀</span><p>頭の中がごちゃごちゃで、うまく整理できない</p></div>
-      <div class="empathy-card"><span class="icon">🙊</span><p>周りの人には、なかなか相談しづらい</p></div>
-      <div class="empathy-card"><span class="icon">😞</span><p>このまま一人で抱え込んでしまいそう</p></div>
+      <div class="empathy-card"><span class="icon">🙇</span><p>周りを優先することが当たり前になっている</p></div>
+      <div class="empathy-card"><span class="icon">🌀</span><p>本当はどうしたいのか、自分でもわからない</p></div>
+      <div class="empathy-card"><span class="icon">😅</span><p>嫌なことも「大丈夫」と言ってしまう</p></div>
+      <div class="empathy-card"><span class="icon">😔</span><p>頑張っているのに、どこか満たされない</p></div>
+      <div class="empathy-card"><span class="icon">🤔</span><p>このままでいいのかな、と感じることがある</p></div>
     </div>
     <p class="empathy-note">大丈夫です。<br>同じように感じている方は、たくさんいらっしゃいます。</p>
   </div>
@@ -440,12 +443,11 @@
       </div>
       <div class="step">
         <div class="step-num">3</div>
-        <div><h3>次の一歩を、一緒に考えます</h3><p>「こうしなければ」ではなく、「こうしてみようかな」と思える小さな一歩を見つけます。</p></div>
+        <div><h3>「私はどうしたい？」に近づく小さな一歩を考えます</h3><p>「こうしなければ」ではなく、「こうしてみようかな」と思える小さな一歩を見つけます。</p></div>
       </div>
     </div>
 
     <div class="feature-grid">
-      <div class="feature-card"><div class="icon">🕊️</div><h3>強引な勧誘なし</h3><p>ご契約を無理におすすめすることはありません。</p></div>
       <div class="feature-card"><div class="icon">🔒</div><h3>プライバシー厳守</h3><p>お話しいただいた内容は、外部に共有しません。</p></div>
       <div class="feature-card"><div class="icon">💻</div><h3>オンラインで対応</h3><p>ご自宅からでも、リラックスしてご参加いただけます。</p></div>
     </div>
@@ -455,8 +457,8 @@
 <section id="contact">
   <div class="container">
     <div class="contact">
-      <h2>まずは、気軽にお話ししてみませんか？</h2>
-      <p>無料相談は完全予約制です。ご都合の良い日をご相談ください。しつこい勧誘は一切ありませんので、安心してご利用ください。</p>
+      <h2>小さな遠慮に気づくことから、始めてみませんか？</h2>
+      <p>無料相談は完全予約制です。ご都合の良い日をご相談ください。ご契約を無理におすすめすることはありません。必要な方にだけ、今後のサポートをご案内します。</p>
       <form class="contact-form" action="https://formsubmit.co/keikoxmind@gmail.com" method="POST">
         <input type="hidden" name="_subject" value="無料相談フォームからのお問い合わせ">
         <input type="hidden" name="_template" value="table">
@@ -485,7 +487,7 @@
 </section>
 
 <footer>
-  <p>© 2026 小さな遠慮に気づく無料相談. All rights reserved.</p>
+  <p>© 2026 Keiko 11style. All rights reserved.</p>
 </footer>
 
 </body>
