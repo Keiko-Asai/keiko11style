@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>無料相談 | 頑張り屋のあなたへ、自分への遠慮に気づく30分</title>
+<meta name="description" content="40代以降の頑張り屋な女性へ。自分への遠慮に気づき、「私はどうしたい？」を取り戻す無料相談(30分・オンライン)。先着5名限定。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%95%8A%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="無料相談 | 頑張り屋のあなたへ、自分への遠慮に気づく30分">
+<meta property="og:description" content="40代以降の頑張り屋な女性へ。自分への遠慮に気づき、「私はどうしたい？」を取り戻す無料相談(30分・オンライン)。先着5名限定。">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="無料相談 | 頑張り屋のあなたへ、自分への遠慮に気づく30分">
+<meta name="twitter:description" content="40代以降の頑張り屋な女性へ。自分への遠慮に気づき、「私はどうしたい？」を取り戻す無料相談(30分・オンライン)。先着5名限定。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=M+PLUS+Rounded+1c:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FBF6F8;
+    --lavender:#E7DEF0;
+    --lavender-deep:#8B6FA8;
+    --pink:#F7DCE3;
+    --pink-deep:#C9698A;
+    --text:#4A3F49;
+    --text-light:#948A97;
+    --white:#FFFFFF;
+    --shadow: 0 10px 30px rgba(139, 111, 168, 0.14);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'M PLUS Rounded 1c','Zen Maru Gothic',sans-serif;
+    color:var(--text);
+    background:var(--bg);
+    line-height:1.85;
+    overflow-x:hidden;
+  }
+  h1,h2,h3{font-family:'Zen Maru Gothic',sans-serif;}
+  a{text-decoration:none;color:inherit;}
+  img{max-width:100%;display:block;}
+  .container{
+    max-width:960px;
+    margin:0 auto;
+    padding:0 24px;
+  }
+  section{position:relative;padding:88px 0;}
+
+  /* ===== Reveal animation ===== */
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease, transform .7s ease;}
+  .reveal.is-visible{opacity:1;transform:translateY(0);}
+
+  /* ===== Hero ===== */
+  .hero{
+    padding:96px 0 120px;
+    text-align:center;
+    overflow:hidden;
+  }
+  .blob{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(2px);
+    opacity:0.55;
+    z-index:0;
+  }
+  .blob1{width:340px;height:340px;background:var(--lavender);top:-80px;left:-100px;}
+  .blob2{width:260px;height:260px;background:var(--pink);top:40px;right:-90px;}
+  .blob3{width:200px;height:200px;background:var(--lavender);bottom:-60px;left:40%;opacity:0.35;}
+  .hero .container{position:relative;z-index:1;}
+  .eyebrow{
+    display:inline-block;
+    background:var(--lavender);
+    color:var(--lavender-deep);
+    font-weight:700;
+    font-size:0.85rem;
+    padding:8px 20px;
+    border-radius:999px;
+    margin-bottom:24px;
+  }
+  .hero h1{
+    font-size:2.15rem;
+    line-height:1.6;
+    font-weight:700;
+    margin-bottom:22px;
+  }
+  .hero h1 span{color:var(--pink-deep);}
+  .hero p.lead{
+    font-size:1.02rem;
+    color:var(--text-light);
+    max-width:520px;
+    margin:0 auto 14px;
+  }
+  .btn-primary{
+    display:inline-block;
+    background:var(--pink-deep);
+    color:#fff;
+    font-weight:700;
+    font-size:1.02rem;
+    padding:18px 44px;
+    border-radius:999px;
+    box-shadow:var(--shadow);
+    border:none;
+    cursor:pointer;
+    font-family:inherit;
+    transition:transform .2s ease, box-shadow .2s ease;
+    margin-top:26px;
+  }
+  .btn-primary:hover{
+    transform:translateY(-3px);
+    box-shadow:0 14px 34px rgba(139,111,168,0.24);
+  }
+  .btn-sub{
+    display:block;
+    margin-top:16px;
+    font-size:0.85rem;
+    color:var(--text-light);
+  }
+  .hero-badges{
+    display:flex;
+    justify-content:center;
+    gap:28px;
+    margin-top:48px;
+    flex-wrap:wrap;
+  }
+  .hero-badge{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-size:0.85rem;
+    color:var(--text-light);
+    font-weight:500;
+  }
+  .hero-badge .dot{width:8px;height:8px;border-radius:50%;background:var(--pink-deep);}
+
+  /* ===== Section heading ===== */
+  .section-head{text-align:center;margin-bottom:56px;}
+  .section-head h2{font-size:1.7rem;font-weight:700;margin-bottom:14px;}
+  .section-head p{color:var(--text-light);max-width:480px;margin:0 auto;}
+
+  /* ===== Empathy ===== */
+  .empathy{background:var(--white);}
+  .empathy-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+    max-width:760px;
+    margin:0 auto;
+  }
+  .empathy-card{
+    background:var(--bg);
+    border-radius:20px;
+    padding:28px 24px;
+    display:flex;
+    gap:16px;
+    align-items:flex-start;
+  }
+  .empathy-card .icon{font-size:1.5rem;flex-shrink:0;}
+  .empathy-card p{font-size:0.95rem;font-weight:500;}
+  .empathy-note{
+    text-align:center;
+    margin-top:48px;
+    font-size:1.1rem;
+    font-weight:700;
+    color:var(--pink-deep);
+    line-height:1.9;
+  }
+
+  /* ===== Content ===== */
+  .content{background:var(--bg);}
+  .steps{
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+    max-width:680px;
+    margin:0 auto 60px;
+  }
+  .step{
+    background:var(--white);
+    border-radius:20px;
+    padding:28px 32px;
+    display:flex;
+    gap:22px;
+    align-items:center;
+    box-shadow:var(--shadow);
+  }
+  .step-num{
+    flex-shrink:0;
+    width:52px;height:52px;
+    border-radius:50%;
+    background:var(--lavender);
+    color:var(--lavender-deep);
+    font-weight:700;
+    font-size:1.2rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .step h3{font-size:1.02rem;margin-bottom:6px;}
+  .step p{font-size:0.9rem;color:var(--text-light);}
+
+  .feature-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+  }
+  .feature-card{
+    text-align:center;
+    padding:32px 20px;
+    background:var(--white);
+    border-radius:20px;
+  }
+  .feature-card .icon{font-size:2rem;margin-bottom:12px;}
+  .feature-card h3{font-size:1rem;margin-bottom:8px;}
+  .feature-card p{font-size:0.85rem;color:var(--text-light);}
+
+  /* ===== Mid CTA ===== */
+  .mid-cta{
+    text-align:center;
+    margin-top:56px;
+  }
+
+  /* ===== Counselor ===== */
+  .counselor{background:var(--white);}
+  .counselor-card{
+    max-width:680px;
+    margin:0 auto;
+    background:var(--bg);
+    border-radius:24px;
+    padding:40px;
+    display:flex;
+    gap:32px;
+    align-items:center;
+    box-shadow:var(--shadow);
+  }
+  .counselor-photo{
+    flex-shrink:0;
+    width:104px;height:104px;
+    border-radius:50%;
+    background:linear-gradient(160deg, var(--lavender) 0%, var(--pink) 100%);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:2.2rem;
+  }
+  .counselor-info h3{font-size:1.1rem;margin-bottom:4px;}
+  .counselor-info .role{font-size:0.82rem;color:var(--pink-deep);font-weight:700;margin-bottom:12px;}
+  .counselor-info p.bio{font-size:0.88rem;color:var(--text-light);}
+
+  /* ===== FAQ ===== */
+  .faq{background:var(--bg);}
+  .faq-list{max-width:680px;margin:0 auto;display:flex;flex-direction:column;gap:16px;}
+  .faq-item{background:var(--white);border-radius:16px;padding:24px 28px;}
+  .faq-item .q{font-weight:700;font-size:0.98rem;display:flex;gap:10px;margin-bottom:10px;}
+  .faq-item .q span{color:var(--pink-deep);}
+  .faq-item .a{font-size:0.88rem;color:var(--text-light);padding-left:26px;}
+
+  /* ===== Contact / final CTA ===== */
+  .contact{
+    background:linear-gradient(160deg, var(--lavender) 0%, var(--pink) 100%);
+    text-align:center;
+    border-radius:32px;
+    max-width:960px;
+    margin:0 auto;
+    padding:72px 24px;
+  }
+  .contact h2{font-size:1.8rem;margin-bottom:16px;}
+  .contact p{color:#4A3F49;max-width:460px;margin:0 auto;}
+
+  .contact-form{
+    background:var(--white);
+    border-radius:24px;
+    padding:40px 32px;
+    max-width:480px;
+    margin:40px auto 0;
+    text-align:left;
+    box-shadow:var(--shadow);
+  }
+  .form-group{margin-bottom:22px;}
+  .form-group:last-of-type{margin-bottom:0;}
+  .form-group label{
+    display:block;
+    font-weight:700;
+    font-size:0.9rem;
+    color:var(--lavender-deep);
+    margin-bottom:8px;
+  }
+  .form-group label .required{color:#e0685f;margin-left:4px;font-weight:700;}
+  .form-group input,
+  .form-group textarea{
+    width:100%;
+    font-family:inherit;
+    font-size:16px;
+    color:var(--text);
+    background:var(--white);
+    border:1px solid rgba(139,111,168,0.2);
+    border-radius:12px;
+    padding:14px 16px;
+    resize:vertical;
+  }
+  .form-group input:focus,
+  .form-group textarea:focus{
+    outline:2px solid var(--lavender-deep);
+    outline-offset:1px;
+  }
+  .form-submit{
+    display:block;
+    width:100%;
+    border:none;
+    cursor:pointer;
+    background:var(--pink-deep);
+    color:#fff;
+    font-family:inherit;
+    font-weight:700;
+    font-size:1.05rem;
+    padding:16px;
+    border-radius:999px;
+    margin-top:28px;
+    box-shadow:var(--shadow);
+    transition:transform .2s ease;
+  }
+  .form-submit:hover{transform:translateY(-2px);}
+  .form-note{font-size:0.78rem;color:var(--text-light);margin-top:14px;text-align:center;}
+
+  /* ===== Footer ===== */
+  footer{
+    text-align:center;
+    padding:40px 24px;
+    font-size:0.8rem;
+    color:var(--text-light);
+  }
+
+  /* ===== Responsive ===== */
+  @media (max-width: 640px){
+    section{padding:64px 0;}
+    .hero{padding:72px 0 88px;}
+    .hero h1{font-size:1.55rem;}
+    .empathy-grid{grid-template-columns:1fr;}
+    .feature-grid{grid-template-columns:1fr;}
+    .voice-grid{grid-template-columns:1fr;}
+    .step{flex-direction:column;text-align:center;}
+    .counselor-card{flex-direction:column;text-align:center;padding:32px 24px;}
+    .contact{border-radius:24px;padding:48px 20px;}
+    .contact-form{padding:32px 22px;}
+  }
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="blob blob1"></div>
+  <div class="blob blob2"></div>
+  <div class="blob blob3"></div>
+  <div class="container">
+    <span class="eyebrow">40代からの、自分を取り戻す時間</span>
+    <h1>頑張り屋のあなたへ。<br><span>自分への遠慮に、そろそろ気づいてあげませんか</span></h1>
+    <p class="lead">周りを優先することが、当たり前になっていませんか。</p>
+    <p class="lead">無料相談では、あなたの中にある「私はどうしたい？」を、一緒に探していきます。</p>
+    <a href="#contact" class="btn-primary">無料相談に申し込む</a>
+    <span class="btn-sub">所要時間 約30分・無料・オンライン(Zoom)</span>
+    <div class="hero-badges">
+      <div class="hero-badge"><span class="dot"></span>先着5名限定</div>
+      <div class="hero-badge"><span class="dot"></span>秘密は厳守します</div>
+    </div>
+  </div>
+</section>
+
+<section class="empathy reveal" id="empathy">
+  <div class="container">
+    <div class="section-head">
+      <h2>こんな気持ち、抱えていませんか？</h2>
+      <p>一つでも当てはまったら、どうぞこのまま読み進めてみてください。</p>
+    </div>
+    <div class="empathy-grid">
+      <div class="empathy-card"><span class="icon">😮‍💨</span><p>頑張っているのに、なぜか満たされない</p></div>
+      <div class="empathy-card"><span class="icon">🙇</span><p>周りの気持ちを優先しすぎて、自分の気持ちがわからなくなった</p></div>
+      <div class="empathy-card"><span class="icon">❓</span><p>「私はどうしたい？」と聞かれても、答えが出てこない</p></div>
+      <div class="empathy-card"><span class="icon">🤐</span><p>誰かに弱音を吐くのが苦手</p></div>
+    </div>
+    <p class="empathy-note">それは、あなたが弱いからではありません。<br>ただ、自分への遠慮に気づく機会が、なかっただけかもしれません。</p>
+  </div>
+</section>
+
+<section class="content reveal" id="content">
+  <div class="container">
+    <div class="section-head">
+      <h2>無料相談で、こんな時間を過ごします</h2>
+      <p>むずかしいことは何もありません。順番に、ゆっくり進めていきます。</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div><h3>今の気持ちを、そのまま話してみる</h3><p>頑張っていること、我慢していることを、そのままお話しください。良い悪いのジャッジは一切しません。</p></div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div><h3>「遠慮」のクセに、そっと気づく</h3><p>いつから、どんな場面で自分を後回しにしてきたのか。一緒に振り返ります。</p></div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div><h3>「私はどうしたい？」に、近づく</h3><p>小さな一歩でいいので、自分の気持ちに正直になれることを一緒に見つけます。</p></div>
+      </div>
+    </div>
+
+    <div class="feature-grid">
+      <div class="feature-card"><div class="icon">🤍</div><h3>ジャッジしない対話</h3><p>否定せず、そのままのあなたを受け止めます。</p></div>
+      <div class="feature-card"><div class="icon">💬</div><h3>「話しやすい」「安心できる」の声</h3><p>初めての方からも、そう言っていただいています。</p></div>
+      <div class="feature-card"><div class="icon">👂</div><h3>寄り添い、聞くことを大切に</h3><p>アドバイスより先に、まずはしっかり聞かせてください。</p></div>
+    </div>
+
+    <div class="mid-cta">
+      <a href="#contact" class="btn-primary">無料相談に申し込む</a>
+    </div>
+  </div>
+</section>
+
+<section class="counselor reveal" id="counselor">
+  <div class="container">
+    <div class="section-head">
+      <h2>お話を伺うのは</h2>
+    </div>
+    <div class="counselor-card">
+      <div class="counselor-photo">🕊️</div>
+      <div class="counselor-info">
+        <h3>Keiko Asai</h3>
+        <p class="bio">「頑張り屋な人ほど、自分を後回しにしやすい」という気づきをきっかけに活動を始めました。ジャッジせず、ただ寄り添うことを大切にしています。安心してお話しいただけるよう、丁寧にお伺いします。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq reveal" id="faq">
+  <div class="container">
+    <div class="section-head">
+      <h2>よくあるご質問</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="q"><span>Q.</span>初対面で緊張してしまいそうです。</div>
+        <div class="a">緊張されるのは自然なことです。うまく話そうとしなくて大丈夫です。ジャッジせず、ただあなたのお話をお聞きします。</div>
+      </div>
+      <div class="faq-item">
+        <div class="q"><span>Q.</span>話しても、何も変わらないんじゃないかと思ってしまいます。</div>
+        <div class="a">無理に答えを出す時間ではありません。まずは今の気持ちに気づくことから、一緒に始めましょう。それが、変わっていく最初の一歩になります。</div>
+      </div>
+      <div class="faq-item">
+        <div class="q"><span>Q.</span>無料と書いてありますが、結局何か売り込まれませんか？</div>
+        <div class="a">強引な勧誘は一切ありません。ご希望の方にだけ今後のサポートをご案内することはありますが、無理にお勧めすることはありませんので、安心してご参加ください。</div>
+      </div>
+      <div class="faq-item">
+        <div class="q"><span>Q.</span>料金や時間、方法を教えてください。</div>
+        <div class="a">無料相談は30分、オンライン(Zoom)で実施しています。先着5名限定でご案内しています。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reveal" id="contact">
+  <div class="container">
+    <div class="contact">
+      <h2>自分への遠慮に、気づくことから始めませんか？</h2>
+      <p>無料相談は先着5名限定です。ご都合の良い日時をご相談ください。</p>
+
+      <form class="contact-form" action="https://formsubmit.co/keikoxmind@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="無料相談フォームからのお問い合わせ">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+        <div class="form-group">
+          <label for="name">お名前<span class="required">必須</span></label>
+          <input type="text" id="name" name="お名前" required>
+        </div>
+        <div class="form-group">
+          <label for="email">メールアドレス<span class="required">必須</span></label>
+          <input type="email" id="email" name="メールアドレス" required>
+        </div>
+        <div class="form-group">
+          <label for="message">ご相談内容(任意)</label>
+          <textarea id="message" name="ご相談内容" rows="4"></textarea>
+        </div>
+
+        <button type="submit" class="form-submit">この内容で送信する</button>
+        <p class="form-note">送信いただいた内容は、この相談の目的以外には使用しません。</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Keiko11style. All rights reserved.</p>
+</footer>
+
+<script>
+  // さりげないフェードイン
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
