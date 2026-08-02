@@ -50,6 +50,52 @@
   .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease, transform .7s ease;}
   .reveal.is-visible{opacity:1;transform:translateY(0);}
 
+  /* ===== Header ===== */
+  header{
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:rgba(251,246,248,0.9);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid rgba(139,111,168,0.1);
+  }
+  .header-inner{
+    max-width:960px;
+    margin:0 auto;
+    padding:16px 24px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+  }
+  .logo{
+    font-family:'Zen Maru Gothic',sans-serif;
+    font-weight:700;
+    font-size:1.05rem;
+    color:var(--lavender-deep);
+    display:flex;
+    align-items:center;
+    gap:6px;
+    min-width:0;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    flex:1 1 auto;
+  }
+  .header-cta{
+    background:var(--pink-deep);
+    color:#fff;
+    padding:10px 20px;
+    border-radius:999px;
+    font-weight:700;
+    font-size:0.85rem;
+    box-shadow:var(--shadow);
+    transition:transform .2s ease;
+    white-space:nowrap;
+    flex-shrink:0;
+  }
+  .header-cta:hover{transform:translateY(-2px);}
+
   /* ===== Hero ===== */
   .hero{
     padding:96px 0 120px;
@@ -341,10 +387,20 @@
     .counselor-card{flex-direction:column;text-align:center;padding:32px 24px;}
     .contact{border-radius:24px;padding:48px 20px;}
     .contact-form{padding:32px 22px;}
+    .header-inner{padding:14px 16px;}
+    .logo{font-size:0.78rem;gap:5px;}
+    .header-cta{font-size:0.75rem;padding:8px 14px;}
   }
 </style>
 </head>
 <body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo">🕊️ 自分への遠慮に気づく無料相談</div>
+    <a href="#contact" class="header-cta">無料相談を予約</a>
+  </div>
+</header>
 
 <section class="hero">
   <div class="blob blob1"></div>
